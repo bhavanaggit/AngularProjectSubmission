@@ -1,0 +1,56 @@
+<style>
+    input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+</style>
+
+<div class="container">
+    <div class="col-md-8 order-md-1" id="reg-title">
+        <h3 id="reg-head" class="mb-3">Registration</h3>
+        <div class="reg">
+            <form [formGroup]="form" style="margin-left: 12%;"  (ngSubmit)="register()" >
+                <div class="row" style="margin-left: 8%;">
+                    <div class="col-md-12 mb-3">
+                        <label for="firstName">First name</label>
+                        <input type="text" style="width: 70%;" class="form-control" formControlName="first_Name" placeholder=" Enter First Name" required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="lastName">Last name</label>
+                        <input type="text" style="width: 70%;" class="form-control" formControlName="last_Name" placeholder="Enter Last Name" required>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-left: 8%;">
+                    <div class="col-md-12 mb-3">
+                        <label for="userName">Mobile No.</label>
+                        <input type="number" style="width: 70%;"  maxlength="10" class="form-control" formControlName="mobile" placeholder="Enter your Mobile No." required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" formControlName="password" placeholder="Enter Your Password"
+                        style="width: 70%;" required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" formControlName="email" placeholder="you@example.com"
+                            style="width: 70%;" required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <input type="submit" value="submit" class="btn btn-warning" style="width: 20%; margin-right: 5%;">
+                   
+                        <input type="reset"  value="Clear" class="btn btn-warning" style="width: 20%;">
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>

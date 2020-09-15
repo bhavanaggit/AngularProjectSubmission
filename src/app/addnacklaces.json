@@ -1,0 +1,24 @@
+{
+  "addnacklaces": [
+    {
+      "prod_code": 3001,
+      "prod_name": "Parinita Nacklace",
+      "prod_cat": "Nacklaces",
+      "price": 600,
+      "color": "silver",
+      "design": "diamond-crafted",
+      "file": "./assets/s1.jpg",
+      "id": 1
+    },
+    {
+      "prod_code": "",
+      "prod_name": "Green kundan  ",
+      "prod_cat": "Nacklaces",
+      "price": 1000,
+      "color": "Green",
+      "design": "circular coded",
+      "file": "./assets/s3.jpg",
+      "id": 2
+    }
+  ]
+}

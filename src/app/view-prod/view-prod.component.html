@@ -1,0 +1,39 @@
+
+<div id="view-usr">
+    
+        <a [routerLink]="['/admin/dashboard']">back</a>
+
+    <h3 style="text-align: center;">Product Details</h3>
+<table  class="table table-hover">
+    <thead>
+        <tr>
+            <th>Product Code</th>
+            <th>Product Name</th>
+            <th>Product Category</th>
+            <th>price</th>
+            <th>color</th>
+            <th>Design</th>
+            <th>image</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of addprod">
+           <td>{{a.prod_code}}</td>
+           <td>{{a.prod_name}}</td>
+           <td>{{a.prod_cat}}</td>
+           <td>{{a.price}}</td>
+           <td>{{a.color}}</td>
+           <td>{{a.design}}</td>
+           <img [src]="a.file" style="width: 120px; height: 120px;margin-top: 3%; margin-bottom: 3%;" >
+            <td><a class="btn btn-outline-warning" style=" font-weight: bold;" >Edit Data </a></td>
+            
+            <td><a style="font-weight: bold;"class="btn btn-outline-warning">Delete Data</a></td>
+        <td></td>
+        </tr>
+    </tbody>
+
+</table>
+</div>

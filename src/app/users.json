@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "first_Name": "Bhavana",
+      "last_Name": "Gurve",
+      "mobile": 9860672273,
+      "password": "bhava@123",
+      "email": "bhavan@gmail.com",
+      "id": 1
+    },
+    {
+      "first_Name": "Gayatri",
+      "last_Name": "Gurve",
+      "mobile": 9078563412,
+      "password": "gayatri@0404",
+      "email": "Gurve@ymail.com",
+      "id": 2
+    },
+    {
+      "first_Name": "sandeep",
+      "last_Name": "Ukey",
+      "mobile": 9881984802,
+      "password": "sandeep@210",
+      "email": "sandeep@ymail.com",
+      "id": 3
+    },
+    {
+      "first_Name": "John",
+      "last_Name": "Marvel",
+      "mobile": 890567341,
+      "password": "johnM",
+      "email": "john@gmail.com",
+      "id": 4
+    }
+  ]
+
+  
+}

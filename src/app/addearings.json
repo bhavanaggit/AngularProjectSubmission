@@ -1,0 +1,24 @@
+{
+  "addearings": [
+    {
+      "prod_code": 101,
+      "prod_name": "Divine Jumka",
+      "prod_cat": "Earnings",
+      "price": 200,
+      "color": "Golden",
+      "design": "symentric",
+      "file": "./assets/e5.jpg",
+      "id": 1
+    },
+    {
+      "prod_code": 102,
+      "prod_name": "fansionable crystal ",
+      "prod_cat": "Earnings",
+      "price": 150,
+      "color": "silver",
+      "design": "",
+      "file": "./assets/e2.jpg",
+      "id": 2
+    }
+  ]
+}

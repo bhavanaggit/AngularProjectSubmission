@@ -1,0 +1,15 @@
+#view-usr,td{
+    color:goldenrod;
+}
+th{
+    color:rgba(209, 129, 9, 0.842);
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    
+  
+    font-weight: bold;
+
+  }
+  

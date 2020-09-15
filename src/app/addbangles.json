@@ -1,0 +1,14 @@
+{
+  "addbangles": [
+    {
+      "prod_code": 2001,
+      "prod_name": "Bridal Bangles",
+      "prod_cat": "Bangales",
+      "price": 500,
+      "color": "golden",
+      "design": "regular",
+      "file": "./assets/b2.jpg",
+      "id": 1
+    }
+  ]
+}

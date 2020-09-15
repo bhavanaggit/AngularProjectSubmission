@@ -1,0 +1,61 @@
+<div class="modal-content" style="background-color: black; color: orange;">
+    <div class="modal-body">
+        <form [formGroup]="form" (ngSubmit)="update()">
+            <div class="row">
+                <div class="col-lg-5">
+
+                    <!--image-->
+                    <div>
+                    <img [src]="file">
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7">
+
+                    <h2 class="h2-responsive product-name">
+                        <!---name of product-->
+                        <input type="text" disabled formControlName="prod_name">
+                    </h2>
+                    <h4 class="h4-responsive">
+                        <span class="green-text">
+                            <!--price-->
+                            <small>Price:</small>
+                            <strong><span><input type="text" disabled formControlName="price" /></span></strong>
+                        </span>
+
+                    </h4>
+
+                    <!--Accordion wrapper-->
+                    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                        <div class="card" style="background-color: black; border:1px solid goldenrod">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingThree3">
+                                <small>product code: </small>
+                                <input type="text" disabled formControlName="prod_code">
+                                <br>
+                                <small>Product Category: </small>
+                                <input type="text" disabled formControlName="prod_cat">
+                                <br>
+                                <small>Color: </small>
+                                <input type="text" disabled formControlName="color" />
+                                <br>
+                                <small>Design: </small>
+                                <input type="text" disabled formControlName="design" disabled />
+                            </div>
+                            <span><button type="button" class="btn btn-info" style="width:50%">Add to Cart</button>
+                            <a [routerLink]="['/bck_earlst']"  class="btn btn-secondary" style="width:50%">cancel</a></span>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

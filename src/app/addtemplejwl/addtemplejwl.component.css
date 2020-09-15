@@ -1,0 +1,17 @@
+.add_prod
+{
+    font-weight: bold;
+    width: 700px;
+    height: 300px;
+    margin-left: 80px;
+    color: goldenrod;
+
+}
+#add-head
+{
+    margin-left: 230px; 
+    margin-top: 30px;
+    color: goldenrod;
+    text-decoration: underline;
+    text-align:center;
+}

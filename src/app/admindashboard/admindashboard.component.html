@@ -1,0 +1,18 @@
+<form>
+<div id="admin-dashBD">
+   
+        <button class="btn"  type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         click to Add Products
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="background-color:black">
+          <button class=" dropdown-item"  type="button" [routerLink]="['/addear_prod']" >Designer Earings</button>
+          <button class="dropdown-item" type="button" [routerLink]="['/addnck_prod']" >Nacklace</button>
+          <button class="dropdown-item" type="button" [routerLink]="['/addbang_prod']">Bangles</button>
+        </div>
+    <a class="btn"  [routerLink]="['/vw_prod']">View Products</a>
+    <a class="btn" [routerLink]="['/add_usr']">Add User</a>
+    <a class="btn"[routerLink]="['/vw_usr']">view users</a>
+    
+</div>
+<hr color="orange" size="1px" >
+</form>

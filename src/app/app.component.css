@@ -1,0 +1,12 @@
+#img1{
+    width: 1000px;
+    height:200px;
+
+}
+.dropdown-item{
+    color:#0275d8;
+}
+.dropdown-item:hover
+{
+    color:black;
+}

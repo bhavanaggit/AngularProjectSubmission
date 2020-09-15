@@ -1,0 +1,22 @@
+#admin-dashBD{
+    margin-left: 5%;
+}
+.btn {
+     
+    font-weight: bold;
+     color:goldenrod;
+     border:none;
+     margin-left: 5%;
+}
+.btn:hover
+{
+    background-color:goldenrod;
+    color: black;
+}
+.dropdown-item{
+    color:#0275d8;
+}
+.dropdown-item:hover
+{
+    color:black;
+}
