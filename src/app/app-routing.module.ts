@@ -21,6 +21,9 @@ import { AddbanglesComponent } from './addbangles/addbangles.component';
 import { BangledetailComponent } from './bangledetail/bangledetail.component';
 import { AddnacklacesComponent } from './addnacklaces/addnacklaces.component';
 import { NacklaceDetailsComponent } from './nacklace-details/nacklace-details.component';
+import { CartComponent } from './cart/cart.component';
+import { AddhandmadejwlComponent } from './addhandmadejwl/addhandmadejwl.component';
+import { AddtemplejwlComponent } from './addtemplejwl/addtemplejwl.component';
 
 const routes: Routes = [{path:"",component:DashboardComponent},
   {path:"login",component:LoginComponent},
@@ -43,7 +46,13 @@ const routes: Routes = [{path:"",component:DashboardComponent},
 {path:"hand_list",component:HandmadejelwComponent},
 {path:"temp_list",component:TemplejewlComponent},
 {path:"addbang_prod",component:AddbanglesComponent},
-{path:"addnck_prod",component:AddnacklacesComponent}
+{path:"addnck_prod",component:AddnacklacesComponent},
+{path:"shp_crt",component:CartComponent},
+{path:"shp_crt/:id",component:CartComponent},
+{path:"bck_HanJwl",component:HandmadejelwComponent},
+{path:"bck_tempJwl", component:TemplejewlComponent},
+{path:"addhmdJwl_prod",component:AddhandmadejwlComponent},
+{path:"addtemple_prod", component:AddtemplejwlComponent}
 
 ];
 

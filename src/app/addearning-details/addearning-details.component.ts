@@ -15,13 +15,43 @@ export class AddearningDetailsComponent implements OnInit {
   addearing:any=[]
   prodcat:string[]=["Earnings"]
   
-  register()
+onFileSelect(event)
+{
+  if(event.target.files.length > 0){
+    const file=(event.target.files[0] as File);
+    this.form.get('file').setValue(file);
+    console.log(this.form.get('file').value);
+    this.addearing.file=this.form.get('file').setValue(file);
+  }
+}
+
+
+
+
+
+
+
+
+  add()
   {
     //this.user.push(this.form.value);
     this.dataService.saveProd(this.form.value).subscribe((res)=>{
-      alert("data saved")
+    alert("data saved")
     })
-   //console.log(this.form.value)
+  console.log(this.form.value)
+   /*console.log(this.form.value);
+   const formData=new FormData();
+   
+   formData.append('file',this.form.get('file').value);
+   
+   this.dataService.saveProd(formData).subscribe((res)=>{
+     console.log("data added",res);
+     alert("data saved");
+     console.log(res);
+
+   })
+*/
+
   }
   getData()
     {
@@ -41,9 +71,9 @@ export class AddearningDetailsComponent implements OnInit {
       price:new FormControl(""),
       color:new FormControl(""), 
       design:new FormControl(""),
-      file: new FormControl("")
+file:new FormControl("")
     })
-
   }
-
+  
+  
 }

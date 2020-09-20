@@ -1,20 +1,20 @@
-<div class="container">
+<div class="container" >
     <div class="col-md-12 mb-3" style="margin-left: 20%;">
         <a [routerLink]="['/admin/dashboard']">back</a>
     </div>
-    <div class="col-md-8 order-md-1" id="reg-title">
+    <div class="col-md-8 order-md-1" id="reg-title" style="height: 800px;">
         <h3 id="add-head" class="mb-3">Add Product Detials</h3>
         <div class="add_prod">
-            <form [formGroup]="form" style="margin-left: 12%;" (ngSubmit)="register()">
+            <form [formGroup]="form" style="margin-left: 12%;" (ngSubmit)="add()">
                 <div class="row" style="margin-left: 8%;">
                     <div class="col-md-12 mb-3">
                         <label for="prod_code">Product Code</label>
                         <input type="number" style="width: 70%;" class="form-control" 
-                            placeholder=" Enter Product Code" formControlName="prod_code" required>
+                            placeholder=" Enter Product Code" formControlName="prod_code" name="prod_cat" required>
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="prod_name">Product Name</label>
-                        <input type="text" style="width: 70%;" class="form-control" 
+                        <input type="text" style="width: 70%;" class="form-control" name="prod_name"
                         formControlName="prod_name" placeholder="Enter Product Name" required>
                     </div>
                 </div>
@@ -22,31 +22,31 @@
                 <div class="row" style="margin-left: 8%;">
                     <div class="col-md-12 mb-3">
                         <label>Select list (select one):</label>
-                        <select class="form-control" formControlName="prod_cat" style="width: 70%;">
+                        <select class="form-control" name="prod_cat" formControlName="prod_cat" style="width: 70%;">
                             <option *ngFor="let s of prodcat" [value]="s">{{s}}</option>
 
                         </select>
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="price">Price</label>
-                        <input type="number" class="form-control" formControlName="price" 
+                        <input type="number" class="form-control" name="price" formControlName="price" 
                         placeholder="Enter Price"
                             style="width: 70%;" required>
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="color">Color</label>
-                        <input type="text" class="form-control" formControlName="color" placeholder="Enter the color"
+                        <input type="text" class="form-control" name="color" formControlName="color" placeholder="Enter the color"
                             style="width: 70%;" required>
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="design">Design</label>
-                        <input type="text" class="form-control" formControlName="design" placeholder="Enter the design pattern"
+                        <input type="text" class="form-control" name="design" formControlName="design" placeholder="Enter the design pattern"
                             style="width: 70%;" required>
                     </div>
                     <div class="col-md-12 mb-3">
                         <div class="input-group mb-3">
    
-                            <input type="file"  formControlName="file" id="filecd">
+                            <input type="file" name="file" fileControlName="file" (change)="onFileSelect($event)" id="filecd">
                                 
                              
                           </div>

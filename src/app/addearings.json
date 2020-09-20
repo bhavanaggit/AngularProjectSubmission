@@ -19,6 +19,16 @@
       "design": "",
       "file": "./assets/e2.jpg",
       "id": 2
+    },
+    {
+      "prod_code": 301,
+      "prod_name": "darling",
+      "prod_cat": "Earnings",
+      "price": 300,
+      "color": "blue",
+      "design": "symmetric",
+      "file": "./assets/e8.jpg",
+      "id": 3
     }
   ]
 }

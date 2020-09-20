@@ -1,0 +1,19 @@
+<div class="alert info" *ngIf="AddEarings.length === 0" style="color: goldenrod;text-align: center;">
+   <br>
+    Your Cart is Empty
+    <br>
+    <br>
+    <a [routerLink]="['']" type="button" style="width:130px" class="btn btn-outline-warning">Shop Now</a>
+</div>
+<div *ngIf="AddEarings.length > 0" >
+<form [formGroup]="form">
+
+   
+        <input type="text" disabled formControlName="price">
+   
+        <input type="text" disabled formControlName="prod_name">
+   
+
+
+</form>
+</div>

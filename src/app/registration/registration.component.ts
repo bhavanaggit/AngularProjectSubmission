@@ -18,7 +18,9 @@ export class RegistrationComponent implements OnInit {
   register()
   {
     //this.user.push(this.form.value);
+   // console.log(this.form.value);
     this.dataService.saveData(this.form.value).subscribe((res)=>{
+      console.log("data added",res)
       alert("data saved")
     })
     //console.log(this.form.value)

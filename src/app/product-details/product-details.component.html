@@ -1,6 +1,6 @@
 <div class="modal-content" style="background-color: black; color: orange;">
     <div class="modal-body">
-        <form [formGroup]="form" (ngSubmit)="update()">
+        <form [formGroup]="form" >
             <div class="row">
                 <div class="col-lg-5">
 
@@ -20,8 +20,8 @@
                     <h4 class="h4-responsive">
                         <span class="green-text">
                             <!--price-->
-                            <small>Price:</small>
-                            <strong><span><input type="text" disabled formControlName="price" /></span></strong>
+                            <small></small>
+                            <strong><span><input type="text" disabled formControlName="price"  /></span></strong>
                         </span>
 
                     </h4>
@@ -44,8 +44,11 @@
                                 <small>Design: </small>
                                 <input type="text" disabled formControlName="design" disabled />
                             </div>
-                            <span><button type="button" class="btn btn-info" style="width:50%">Add to Cart</button>
+<div >
+                            <span><button type="button" class="btn btn-info"
+                                 [routerLink]="['/shp_crt/'+id]"   style="width:50%">Add to Cart</button>
                             <a [routerLink]="['/bck_earlst']"  class="btn btn-secondary" style="width:50%">cancel</a></span>
+                        </div>
                         </div>
 
 

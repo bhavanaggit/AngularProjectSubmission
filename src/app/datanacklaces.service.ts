@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import{HttpClient} from '@angular/common/http';
-const url="http://localhost:4444/addnacklaces/"
+const url="http://localhost:5555/addnacklaces/"
 @Injectable({
   providedIn: 'root'
 })

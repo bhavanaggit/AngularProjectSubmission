@@ -10,22 +10,41 @@
                 <nav class="nav">
                     <a class="nav-link active" href="#">Home</a>
                     <div class="dropdown">
-                        <a  class="nav-link dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a  class="nav-link data-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Products
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="background-color:black">
                           <button class=" dropdown-item"  type="button" [routerLink]="['/bck_earlst']">Designer Earings</button>
                           <button class="dropdown-item" type="button" [routerLink]="['/bck_ncklst']">Nacklace</button>
                           <button class="dropdown-item" type="button" [routerLink]="['/bck_banglst']">Bangles</button>
+                          <button class="dropdown-item" type="button" [routerLink]="['/bck_HanJwl']">Hand-Made Jewellery</button>
+                          <button class="dropdown-item" type="button" [routerLink]="['/bck_tempJwl']">Temple Jewellery</button>
                         </div>
                       </div>
-                    <a class="nav-link" href="#">Contact us</a>
+                   
                 </nav>
             </div>
-            <a class="btn btn-outline-primary" [routerLink]="['/login']">Login</a>
+            <a id="login" style="background-color: none;" class="btn-outline-primary"title="login" [routerLink]="['/login']"><i class="fa fa-user" style="font-size: 40px;" aria-hidden="true"></i></a>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <a class="btn btn-outline-primary" [routerLink]="['reg']">Sign up</a>
-        </div>
+        <div style="margin-left: 1%;">
+            <a  [routerLink]="['/shp_crt']"   style="font-size:24px">
+              <i class="fa fa-shopping-cart"  style="font-size:32px;color:primary"></i>
+              </a>
+            </div>
+<!---shopping cart button
+
+<div class="dropleft">
+  <a  class="nav-link data-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"  style="font-size:24px">
+  <i class="fa fa-shopping-cart" style="font-size:32px"></i>
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="background-color:black">
+     <app-cart></app-cart>
+  </div>
+</div>
+-end -->
+        
+          </div>
 
 
 

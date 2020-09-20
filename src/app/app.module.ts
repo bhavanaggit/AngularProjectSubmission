@@ -34,6 +34,7 @@ import { AddtemplejwlComponent } from './addtemplejwl/addtemplejwl.component';
 import { BangledetailComponent } from './bangledetail/bangledetail.component';
 import { TemplejwldetailComponent } from './templejwldetail/templejwldetail.component';
 import { NacklaceDetailsComponent } from './nacklace-details/nacklace-details.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { NacklaceDetailsComponent } from './nacklace-details/nacklace-details.co
     AddtemplejwlComponent,
     BangledetailComponent,
     TemplejwldetailComponent,
-    NacklaceDetailsComponent
+    NacklaceDetailsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

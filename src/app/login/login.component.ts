@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import{ReactiveFormsModule, FormGroup} from '@angular/forms';
 import { analyzeAndValidateNgModules } from '@angular/compiler';
+import {  FormBuilder, Validators, NgForm } from '@angular/forms';
+import { first } from 'rxjs/operators';
 
 import { DataService } from '../data.service';
 import{FormsModule} from '@angular/forms';
@@ -31,6 +33,7 @@ password1 = ''
   {
       alert("invalid username and password")
   }
+  
   }
   ngOnInit(): void {
    

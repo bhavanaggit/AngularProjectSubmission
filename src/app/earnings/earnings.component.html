@@ -18,7 +18,7 @@
        
         <div class="d-flex justify-content-between align-items-center" style="margin-top: 2%;margin-left:10%;">
           <div class="btn-group">
-           <a href="#" class="btn btn-sm btn-outline-warning" style="color:goldenrod;">Add To card</a>
+           <a [routerLink]="['/shp_crt/'+a.id]"  class="btn btn-sm btn-outline-warning" style="color:goldenrod;">Add To card</a>
             <a [routerLink]="['/er_dt/'+a.id]" class="btn btn-sm btn-outline-warning" style="color:goldenrod; ">View Details</a>
           </div>
         </div>

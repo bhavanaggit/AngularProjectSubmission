@@ -9,6 +9,16 @@
       "design": "regular",
       "file": "./assets/b2.jpg",
       "id": 1
+    },
+    {
+      "prod_code": 304,
+      "prod_name": "Jaipuri Kangan",
+      "prod_cat": "Bangales",
+      "price": 1000,
+      "color": "golden",
+      "design": "symentric",
+      "file": "./assets/b3.jpg",
+      "id": 2
     }
   ]
 }

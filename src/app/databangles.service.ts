@@ -5,7 +5,7 @@ const url="http://localhost:3333/addbangles/";
   providedIn: 'root'
 })
 export class DatabanglesService {
-
+  redirectUrl: string;
   constructor(private httpclient:HttpClient) { }
   saveProd(data)  
   {

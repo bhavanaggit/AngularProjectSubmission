@@ -1,3 +1,34 @@
 {
-    "addhandmadejwl1":[]
+  "addhandmadejwl1": [
+    {
+      "prod_code": 401,
+      "prod_name": "Elephant Crafted Nacklace",
+      "prod_cat": "Hand Made Jwelery",
+      "price": 500,
+      "color": "multi Color",
+      "design": "Straight",
+      "file": "./assets/hmS2.jpg",
+      "id": 1
+    },
+    {
+      "prod_code": 402,
+      "prod_name": "Blue Stone Nacklace",
+      "prod_cat": "Hand Made Jwelery",
+      "price": 800,
+      "color": "Acqua Blue",
+      "design": "Square",
+      "file": "./assets/hmS1.jpg",
+      "id": 2
+    },
+    {
+      "prod_code": 403,
+      "prod_name": "Blue Stone Elephant Earings",
+      "prod_cat": "Hand Made Jwelery",
+      "price": 500,
+      "color": "Acqua Blue",
+      "design": "Elephant",
+      "file": "./assets/hmE1.jpg",
+      "id": 3
+    }
+  ]
 }
